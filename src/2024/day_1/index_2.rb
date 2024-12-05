@@ -1,6 +1,6 @@
 require_relative "../../util/parse_input.rb"
 
-input = parseInput { |line| line.split('   ').map(&:to_i) }
+input = parse_input { |line| line.split('   ').map(&:to_i) }
 
 occurrences = input.transpose[1].tally
 
